@@ -1,0 +1,5 @@
+future: 
+card: The Papess/High Priestess
+fortune: A mysterious woman arrives
+
+

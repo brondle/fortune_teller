@@ -1,0 +1,21 @@
+from time import sleep
+import cups
+import os
+import json
+
+with open('tarot.json') as json_file:
+	data = json.load(json)
+	past_index = random().randint(0, 77)
+	present_index = random().randint(0, 77)
+	future_index = random().randint(0, 77) 
+	
+
+def get_reading(data, index):
+	card = data.tarot_interprations[index]
+	fortune = card.fortune_telling[random().randint(0, card.fortune_telling.len() -1]
+	name = card.name
+	values = {'fortune': fortune, name: 'name'}
+	return value
+
+
+

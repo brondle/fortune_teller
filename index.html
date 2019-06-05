@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+  </head>
+  <body>
+    <form action="http://127.0.0.1:5000/fortune"">
+    <input type="submit" id='script' name="scriptbutton" value=" Get your Tarot reading for the day! " onclick="goPython()">
+    </form>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script>
+        function goPython(){
+            $.ajax({
+              url: "script.py",
+             context: document.body
+            }).done(function() {
+             console.log('finished python script');;
+            });
+        }
+    </script>
+  </body>
+</html>
